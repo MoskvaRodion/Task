@@ -3,6 +3,8 @@ body
     display : flex;
     justify-content: center;
     align-items: center;
+    background: url(img/bg.jpg) no-repeat center center fixed;
+    background-size: cover;
 }
 
 button {
@@ -12,3 +14,13 @@ button {
 input {
     border-radius: 10px;
 }
+footer {
+    position: fixed; 
+    left: 0; bottom: 0; 
+    width: 100%; 
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    background: #3967b5;
+    padding: 10px;
+} 
