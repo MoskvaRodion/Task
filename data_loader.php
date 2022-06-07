@@ -1,14 +1,9 @@
 <?php
 $inform = new PDO("sqlite:Countries.sqlite");
-$sql = "SELECT * FROM 'informations' LIMIT 10";
+$sql = "SELECT * FROM 'informations'";
 $result = $inform->query($sql)->fetchAll(PDO::FETCH_ASSOC);
-
-
-echo "<pre>";
-print_r($result);
-echo "</pre>";
 ?>
-<table>
+<table border="2">
     <thead>
         <tr>
             <td>№</td>
@@ -17,9 +12,9 @@ echo "</pre>";
             <td>Столица</td>
         </tr>
     </thead>
-<?php foreach($data as $value){ ?>
+<?php foreach($result as $value){ ?>
     <tr>
-        <td><?php echo $value['Id']; ?></td>
+        <td><?php echo $value['id']; ?></td>
         <td><?php echo $value['country_name']; ?></td>
         <td><?php echo $value['language']; ?></td>
         <td><?php echo $value['capital']; ?></td>

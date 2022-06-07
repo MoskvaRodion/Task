@@ -8,12 +8,15 @@
     <title>Task</title>
 </head>
 <body>
-    <form action="main.php" method="post">
+    <form action="request.php" method="post">
         <input type="text" name="Country" required placeholder="Введите страну" size="18" />
         <input type="text" name="Language" placeholder="Введите язык" size="18" />
         <input type="text" name="Capital" placeholder="Введите столицу" size="18" />
         <button type="submit">Добавить</button> 
     </form>
+    <script language="php">
+        inclued('data_loader.php');
+    </script>
     <footer>
         <a href="">Поддержка</a>
     </footer>
