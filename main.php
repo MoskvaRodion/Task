@@ -5,18 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Task</title>
+    <title>Document</title>
 </head>
 <body>
-    <form action="request.php" method="post">
+<form action="request.php" method="post">
         <input type="text" name="Country" required placeholder="Введите страну" size="18" />
         <input type="text" name="Language" placeholder="Введите язык" size="18" />
         <input type="text" name="Capital" placeholder="Введите столицу" size="18" />
-        <button type="submit">Добавить</button> 
+        <button type="submit" name="Add">Добавить</button> 
     </form>
-    <script language="php">
-        inclued('data_loader.php');
-    </script>
+    <?php
+        include('data_loader.php');
+    ?>
     <footer>
         <a href="">Поддержка</a>
     </footer>

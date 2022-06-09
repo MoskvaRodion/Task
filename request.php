@@ -5,5 +5,5 @@ $Country = $_POST["Country"];
 $Language = $_POST["Language"];
 $Capital = $_POST["Capital"];
 $sql = "INSERT INTO users (country_name, language, capital) VALUES ($Country, $Language, $Capital)";
-$result = $inform->query($sql)->fetchAll(PDO::FETCH_ASSOC);
+$result = $inform->exec($sql);
 ?>
