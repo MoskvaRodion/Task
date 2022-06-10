@@ -1,0 +1,23 @@
+body{
+    background: url('/img/bg.jpg') no-repeat center center fixed; 
+}
+form, .data{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    text-align: center;
+
+}
+.data {
+    padding-top: 20px;
+} 
+button {
+    margin-left: 1em;
+    border-radius: 10px;
+}
+input {
+    border-radius: 10px;
+    margin-left: 1em;
+}
+

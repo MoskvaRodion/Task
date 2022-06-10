@@ -1,5 +1,4 @@
 <?php
-
 $inform = new PDO("sqlite:Countries.sqlite");
 $Country = $_POST["Country"];
 $Language = $_POST["Language"];
