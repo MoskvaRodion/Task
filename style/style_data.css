@@ -1,5 +1,11 @@
 table, td {
+    border-collapse: collapse;
     color: white;
     border-color: white ;
     color: white;
+    border-spacing: 0;
+}
+td {
+    border: 1px solid;
+    padding: 4px;
 }

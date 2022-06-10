@@ -13,7 +13,7 @@ $inform = new PDO("sqlite:Countries.sqlite");
 $sql = "SELECT * FROM 'informations'";
 $result = $inform->query($sql)->fetchAll(PDO::FETCH_ASSOC);
 ?>
-<table border="2">
+<table>
     <thead>
         <tr>
             <td>№</td>
